@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     /** Number of pages in ViewPager */
     public static final int NUM_OF_PAGER_PAGES = 2;
+
     private DrawerLayout drawerLayout;
     private ViewPager viewPager;
     private PagerAdapter pagerAdapter;
@@ -26,9 +27,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        initializeUI();
-
-
+        initializeUserInterfase();
     }
 
     @Override
@@ -49,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         else super.onBackPressed();
     }
 
-    private void initializeUI() {
+    private void initializeUserInterfase() {
         setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
