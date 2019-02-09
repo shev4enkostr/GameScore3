@@ -15,6 +15,7 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
 
+    /** Number of pages in ViewPager */
     public static final int NUM_OF_PAGER_PAGES = 2;
     private DrawerLayout drawerLayout;
     private ViewPager viewPager;
